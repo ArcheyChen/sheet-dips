@@ -1,0 +1,10 @@
+--- a/CMakeLists.txt
++++ b/CMakeLists.txt
+@@
+     foreach(tool cube_mesh grid_pipeline grid_weld)
+         target_link_libraries(${tool} PRIVATE scrollfiesta_core)
++        if(SCROLLFIESTA_OPENMP AND NOT MSVC)
++            # local fix (p4sf): the per-cube OpenMP dispatch of grid_pipeline is serial without this
++            target_compile_options(${tool} PRIVATE ${SF_OMP_COMPILE})
++        endif()
+         set_target_properties(${tool} PROPERTIES C_STANDARD 17 C_EXTENSIONS ON)

@@ -1,0 +1,6 @@
+numpy
+scipy
+opencv-python-headless
+tifffile
+numcodecs
+requests
