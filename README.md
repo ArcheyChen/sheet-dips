@@ -226,16 +226,19 @@ pointed out the detours on clean, well separated sheets; its parameters were set
 - The panels show the labelling-only repair. The cleanup added later changes the row near the marked node in 3 of the
   30 units: in #7 and #12 it removes a right-angle detour the labelling had left; in #22 the line changes but is
   not clearly better.
-- A second round (the Codex rater, 2026-11-25, same instruction and panel format, after the cleanup was added) on two
-  new random samples of the held-out atlas:
+- A second round (2026-11-25, after the cleanup was added; the same three kinds of rater, each on its own copy of the
+  panels and the same instruction) on two new random samples of the held-out atlas. Task A: 30 units the full
+  repair moved, against the original. Task B: 30 units the cleanup moved, against the labelling-only repair.
 
-| | full repair vs original (30 units moved) | cleanup vs labelling only (30 units the cleanup moved) |
-|---|---|---|
-| the repaired / cleaned line stays on one sheet, the other does not | 15 | 17 |
-| the other line stays, the repaired / cleaned one does not | 1 | 0 |
-| neither stays | 7 | 11 |
-| both stay (different sheets / same sheet) | 1 / 1 | 0 / 0 |
-| unclear | 5 | 2 |
+| | A: Claude 1 | A: Claude 2 | A: Codex | A: all three | B: Claude 1 | B: Claude 2 | B: Codex | B: all three |
+|---|---|---|---|---|---|---|---|---|
+| repaired / cleaned line stays on one sheet, the other does not | 20 | 18 | 15 | 13 | 23 | 24 | 17 | 16 |
+| the other line stays, the repaired / cleaned one does not | 3 | 2 | 1 | 1 | 0 | 1 | 0 | 0 |
+| neither stays | 3 | 4 | 7 | 1 | 6 | 4 | 11 | 3 |
+| both stay (different sheets / same sheet) | 1 / 1 | 3 / 0 | 1 / 1 | 1 / 0 | 0 / 0 | 0 / 0 | 0 / 0 | 0 / 0 |
+| unclear | 2 | 3 | 5 | 2 | 1 | 1 | 2 | 0 |
+
+  Pairwise agreement: A 20-23 of 30, B 21-25 of 30; all three agree on 18 (A) and 19 (B) units.
 
 - An earlier, single-rater pass on downscaled panels of the 10x10x10 atlas gave 16 repaired better against
   1 original better.
